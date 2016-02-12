@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="Category">
+        <CheckBoxPreference
+            android:title="Push"
+            android:icon="@mipmap/ic_launcher"
+            android:summary="Message Notification"
+            android:key="Push"
+            />
+        <SwitchPreference
+            android:title="switch"
+            android:key="switch" />
+    </PreferenceCategory>
+
+    <CheckBoxPreference
+        android:title="modify name"
+        android:key="modify"
+        android:defaultValue="false" />
+
+    <EditTextPreference
+        android:title="user name"
+        android:key="username"
+        android:dependency="modify" />
+    <PreferenceScreen
+        android:title="other setting">
+        <CheckBoxPreference android:title="other settings"
+            android:key="other" />
+    </PreferenceScreen>
+</PreferenceScreen>
