@@ -5,7 +5,7 @@
             android:title="Push"
             android:icon="@mipmap/ic_launcher"
             android:summary="Message Notification"
-            android:key="Push"
+            android:key="push"
             />
         <SwitchPreference
             android:title="switch"
